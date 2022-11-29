@@ -1,0 +1,7 @@
+<div className='relative md:absolute md:top-[10vh]  mb-5 mx-auto w-[50vh] md:w-[80vh] md:right-[0px] h-[80vh] mt-9 md:overflow-hidden '>
+                                    <Image src="/projects/Alkis.png" fill className='absolute  object-cover ' />
+                                </div>
+
+
+
+                                
