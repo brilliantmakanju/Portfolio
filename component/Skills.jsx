@@ -15,12 +15,12 @@ const Skills = () => {
                             TSkill.map((value, id) => (
                                 <>
                                     <div key={id} className='p-6 md:w-[90%]  shadow-xl rounded-xl hover:scale-[1.03] ease-in duration-300  '>
-                                        <div className='grid grid-cols-2 gap-6 justify-center items-center '>
-                                            <div className='flex flex-col items-center justify-center' >
+                                        <div className='grid grid-cols-2 gap-6 justify-center items-start'>
+                                            <div className='flex flex-col items-start justify-center' >
                                                 <h3 className='capitalize' >{value.skillName}</h3>
                                             </div>
                                             <div className='w-full bg-gray-500 rounded-full h-1.5 mb-4  '>
-                                                <div className='bg-blue-400 text-xs font-medium text-blue-700 p-0.5 leading-none h-1.5 rounded-full  ' style={{width:"32%"}} >50%</div>
+                                                <div className='bg-blue-400 text-xs font-medium text-blue-700 p-0.5 leading-none h-1.5 rounded-full  ' style={{width:"50%"}} ></div>
                                             </div>
                                         </div>
                                     </div>
