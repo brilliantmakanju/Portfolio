@@ -6,7 +6,7 @@ const Image = dynamic(() => import("next/image"))
 
 const About = () => {
     return (
-        <div className='w-screen md:h-screen p-2 flex items-center py-20 ' id='about'>
+        <div className='w-screen md:h-screen p-2 flex items-center pt-20 mb-[20em] ' id='about'>
             <div className='max-w-[1240px] md:ml-10 ml-2 m-auto md:grid md:grid-cols-3 gaps-8 '>
                 <div className='col-span-2'>
                     <p className='uppercase text-xl tracking-widest text-[#5e51e5] '>About</p>

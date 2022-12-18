@@ -57,8 +57,8 @@ const Contact = () => {
     }
 
     return (
-        <div className='w-screen   lg:h-screen' id='contact' >
-            
+        <div className='w-screen mt-[25em] ' id='contact' >
+
             <div className={`  ${popup ? ' fixed left-0 top-0 w-full h-screen bg-[#0c0b0bbb] ' : '  '}  `}></div>
             <div className={`${popup ? "popup" : "popout hidden"} fixed  md:left-[71vh] left-[5vh] top-[50vh] right-auto bg-[#bccec9] w-[80%] md:w-[30%] mx-auto my-auto translate-x-[50%] translate-y-[-50%] shadow-xl shadow-gray-700 rounded-lg`} >
                 <p onClick={(() => setPopup(false))} className='text-[white] h-[40px] flex items-center justify-center w-[40px] rounded-[100%] bg-slate-600 absolute p-3 top-2 right-2 shadow-md shadow-[#493f2c] ' >X</p>

@@ -37,13 +37,10 @@ const Nav = () => {
 
     return (
         <nav className={` ${router.pathname === '/Experience' ? 'fixed top-0  ' : ''}  ease-in duration-100 transition-colors ${fixed ? "fixed w-full h-20 shadow-xl z-[100]  bg-neutral-800 shadow-neutral-600 border-b-2 border-[black]" : " fixed w-full h-20 z-[100] "} `}>
-            <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 '>
-                <Image
-                    src="/vercel.svg"
-                    alt="Logo"
-                    width='125'
-                    height="40"
-                />
+            <div className='flex text-white justify-between items-center w-full h-full pl-[15px] px-2 2xl:px-16 '>
+                <h2>
+                    Alkis Savoullis
+                </h2>
                 <div>
                     <ul className={` ${fixed ? " hidden md:flex text-white" : " hidden md:flex"}`}>
                         <Link
@@ -107,17 +104,16 @@ const Nav = () => {
 
             <div className={` ${mobile ? ' md:hidden fixed left-0 top-0 w-full h-screen bg-[#141313b2] ' : '  '}  `}>
                 <div className={mobile ? 'fixed  left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#bccec9] p-10 ease-in duration-500  ' : ' fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#bccec9] p-10 ease-in duration-300  '}>
-                    <div>
-                        <div className='flex w-full justify-between'>
-                            <Image
-                                src="/vercel.svg"
-                                alt="Logo"
-                                width='87'
-                                height="35"
-                            />
+                    <div className='ml-[-20px]' >
+                        <div className='flex w-full justify-end'>
                             <div onClick={() => handleMobile()} className='rounded-full shadow-lg shadow-gray-400 cursor-pointer p-3 '>
                                 <AiOutlineClose />
                             </div>
+                        </div>
+                        <div className='flex justify-between items-center w-full h-full mt-[20px] ' >
+                            <h2>
+                                Alkis Savoullis
+                            </h2>
                         </div>
                         <div className='border-b border-gray-300 py-4'>
                             <p className='w-[85%] md:w-[50%] py-4 '>Let's Build the future together</p>
