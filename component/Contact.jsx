@@ -57,7 +57,7 @@ const Contact = () => {
     }
 
     return (
-        <div className='w-screen mt-[25em] ' id='contact' >
+        <div className='w-screen mt-[5em] md:mt-[25em] ' id='contact' >
 
             <div className={`  ${popup ? ' fixed left-0 top-0 w-full h-screen bg-[#0c0b0bbb] ' : '  '}  `}></div>
             <div className={`${popup ? "popup" : "popout hidden"} fixed  md:left-[71vh] left-[5vh] top-[50vh] right-auto bg-[#bccec9] w-[80%] md:w-[30%] mx-auto my-auto translate-x-[50%] translate-y-[-50%] shadow-xl shadow-gray-700 rounded-lg`} >
