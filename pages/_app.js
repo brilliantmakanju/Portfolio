@@ -5,6 +5,7 @@ import Router from "next/router";
 import Nav from "../component/Nav";
 import { useEffect, useState } from "react";
 import { BallTriangle } from "react-loader-spinner";
+import Topscroll from "../component/Topscroll";
 
 Router.events.on("routeChangeStart", (url) => {
   NProgress.start();
@@ -37,6 +38,7 @@ export default function MyApp({ Component, pageProps }) {
           <Nav />
           
           <Component {...pageProps}></Component>
+          {/* <Topscroll /> */}
         </>
       )}
     </>

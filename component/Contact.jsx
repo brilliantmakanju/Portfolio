@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 import emailjs from '@emailjs/browser'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { BsPersonFill } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
 const Link = dynamic(() => import("next/link"))
@@ -55,6 +55,20 @@ const Contact = () => {
                 }
             )
     }
+
+    const [fixed, setFixed] = useState(false)
+
+    const FixedChange = () => {
+        if (window.scrollY >= 100) {
+            setFixed(true)
+        } else {
+            setFixed(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", FixedChange)
+    }, [])
 
     return (
         <div className='w-screen mt-[5em] md:mt-[25em] ' id='contact' >
@@ -137,13 +151,6 @@ const Contact = () => {
                             </form>
                         </div>
                     </div>
-                </div>
-                <div className='flex justify-center py-12' >
-                    <Link href='/'>
-                        <div className='rounded-full shadow-lg  shadow-gray-600 p-4 cursor-pointer hover:scale-[1.03] ease-in duration-300  ' >
-                            <HiOutlineChevronDoubleUp className='m-auto text-[#5e51e5] ' size='30' />
-                        </div>
-                    </Link>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { JobLevel } from '../data'
+import Topexp from '../component/Topexp'
 
 const Experience = () => {
     return (
@@ -18,6 +19,7 @@ const Experience = () => {
                     ))
                 }
             </div>
+            <Topexp />
         </div>
     )
 }
