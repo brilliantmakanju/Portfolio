@@ -6,7 +6,7 @@ const Image = dynamic(() => import("next/image"))
 
 const About = () => {
     return (
-        <div className='w-screen bg-gray-700 mx-auto h-screen p-2 flex items-center pt-20  pb-32 ' id='about'>
+        <div className='w-screen bg-gray-700 py-[13em] px-5 mx-auto h-screen flex items-center  ' id='about'>
             <div className='max-w-[1240px]  mx-auto md:grid md:grid-cols-3 gaps-8 xl:gap-[100px] '>
                 <div className='col-span-2'>
                     <p className='uppercase text-xl tracking-widest text-[#5e51e5] '>About</p>
@@ -23,7 +23,7 @@ const About = () => {
                         <p className='py-2 text-gray-300 underline cursor-pointer ' >Check out some of my latest projects.</p>
                     </Link>
                 </div>
-                <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center  p-4 hover:scale-[1.03] ease-in duration-300 '>
+                <div className='w-full h-auto m-auto mt-5 shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center  p-4 hover:scale-[1.03] ease-in duration-300 '>
                     {
                         AboutMe.map((value, id) => (
                             <>
