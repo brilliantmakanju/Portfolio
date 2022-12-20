@@ -26,17 +26,17 @@ const Intro = () => {
                                     {Value.name}</span></h1>
                                 <p className=' md:w-[70%] md:px-[auto] pl-[20px] mx-[auto] text-gray-200'>{Value.role}</p>
                                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4 ' >
-                                    <div className='rounded-full shadow-lg bg-gray-300 text-blue-800 shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <FaLinkedinIn />
+                                    <div className='rounded-full  shadow-lg text-blue-400 shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                        <FaLinkedinIn size={50} />
                                     </div>
-                                    <div className='rounded-full shadow-lg bg-gray-300 shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <FaGithub />
+                                    <div className='rounded-full shadow-lg text-black bg-gray-200 shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                        <FaGithub size={50} />
                                     </div>
-                                    <div className='rounded-full shadow-lg bg-gray-300 text-blue-500 shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <FaTwitter />
+                                    <div className='rounded-full shadow-lg  text-blue-500 shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                        <FaTwitter size={50} />
                                     </div>
-                                    <div className='rounded-full shadow-lg bg-gray-300 text-[red] shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <FaYoutube />
+                                    <div className='rounded-full shadow-lg  text-[red] shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                        <FaYoutube size={50} />
                                     </div>
                                 </div>
 

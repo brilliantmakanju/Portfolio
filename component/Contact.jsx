@@ -74,14 +74,14 @@ const Contact = () => {
         <div className='w-screen md:mt-[-10%] text-gray-200  mt-[-22%] h-auto bg-gray-700  ' id='contact' >
 
             <div className={`  ${popup ? ' fixed left-0 top-0 w-full h-screen bg-[#0c0b0bbb] ' : '  '}  `}></div>
-            <div className={`${popup ? "popup" : "popout hidden"} fixed  md:left-[71vh] left-[5vh] top-[50vh] right-auto bg-[#bccec9] w-[80%] md:w-[30%] mx-auto my-auto translate-x-[50%] translate-y-[-50%] shadow-xl shadow-gray-700 rounded-lg`} >
+            <div className={`${popup ? "popup" : "popout hidden"} fixed  md:left-[71vh] left-[5vh] top-[50vh] right-auto bg-gray-900 w-[80%] md:w-[30%] mx-auto my-auto translate-x-[50%] translate-y-[-50%] shadow-xl shadow-gray-700 rounded-lg`} >
                 <p onClick={(() => setPopup(false))} className='text-[white] h-[40px] flex items-center justify-center w-[40px] rounded-[100%] bg-slate-600 absolute p-3 top-2 right-2 shadow-md shadow-[#493f2c] ' >X</p>
                 <h2 className='w-full rounded-lg p-2 border-[#1d1c1c] border-2 border-b-5 '>Message Sent</h2>
                 <p className='p-10 text-center font-bold text-[green] ' > Your Message has been sent Successfully. </p>
             </div>
 
             <div className={` ${popup2 ? ' fixed left-0 top-0 w-full h-screen bg-[#0c0b0bbb] ' : '  '}  `}></div>
-            <div className={`${popup2 ? "popup" : "popout"} fixed  md:left-[71vh] left-[5vh] top-[50vh] right-auto bg-[#bccec9] w-[80%] md:w-[30%] mx-auto my-auto translate-x-[50%] translate-y-[-50%] shadow-xl shadow-gray-700 rounded-lg`} >
+            <div className={`${popup2 ? "popup" : "popout"} fixed  md:left-[71vh] left-[5vh] top-[50vh] right-auto bg-gray-900 w-[80%] md:w-[30%] mx-auto my-auto translate-x-[50%] translate-y-[-50%] shadow-xl shadow-gray-700 rounded-lg`} >
                 <p onClick={(() => setPopup2(false))} className='text-[white] h-[40px] flex items-center justify-center w-[40px] rounded-[100%] bg-slate-600 absolute p-3 top-2 right-2 shadow-md shadow-[#493f2c] ' >X</p>
                 <h2 className='w-full rounded-lg p-2 border-[#1d1c1c] border-2 border-b-5 '>Message Failed</h2>
                 <p className='p-10 text-center font-bold text-[red] ' > Sorry an Error Occured. can you send the message again, Thank you. </p>
@@ -110,17 +110,17 @@ const Contact = () => {
                             <div>
                                 <p className='uppercase' >Connect with me</p>
                                 <div className='flex items-center justify-between py-4 ' >
-                                    <div className='rounded-full shadow-lg text-blue-800 shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <FaLinkedinIn />
+                                    <div className='rounded-full  shadow-lg text-blue-400 shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                        <FaLinkedinIn size={50} />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <FaGithub />
+                                    <div className='rounded-full shadow-lg text-black bg-gray-200 shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                        <FaGithub size={50} />
                                     </div>
-                                    <div className='rounded-full shadow-lg text-blue-500 shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <FaTwitter />
+                                    <div className='rounded-full shadow-lg  text-blue-500 shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                        <FaTwitter size={50} />
                                     </div>
-                                    <div className='rounded-full shadow-lg text-[red] shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <FaYoutube />
+                                    <div className='rounded-full shadow-lg  text-[red] shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                        <FaYoutube size={50} />
                                     </div>
                                 </div>
                             </div>
@@ -132,16 +132,16 @@ const Contact = () => {
                                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                     <div className='flex flex-col'>
                                         <label className='uppercase text-sm py-2 '>Name</label>
-                                        <input type="text" onChange={handleName} value={froms} name="user_name" className='border-2 rounded-xl p-3 flex border-gray-300 text-black ' required />
+                                        <input type="text" onChange={handleName} value={froms} name="user_name" className='border-2 rounded-xl p-3 flex border-gray-300 md:focus:outline  text-black  '  required />
                                     </div>
                                     <div className='flex flex-col'>
                                         <label className='uppercase text-sm w-full py-2 '>Email</label>
-                                        <input type="email" onChange={handleEmail} name="email" className='text-black border-2 rounded-xl p-3 flex border-gray-300' required />
+                                        <input type="email" onChange={handleEmail} name="email" className=' md:focus:outline  text-black border-2 rounded-xl p-3 flex border-gray-300' required />
                                     </div>
                                 </div>
                                 <div className='flex flex-col py-2'>
                                     <label className='uppercase text-sm w-full py-2 '>Subject</label>
-                                    <input type="text" className='border-2 rounded-xl p-3 text-black flex border-gray-300' required />
+                                    <input type="text" className='border-2 md:focus:outline rounded-xl p-3 text-black flex border-gray-300' required />
                                 </div>
                                 <div className='flex flex-col py-2'>
                                     <label className='uppercase text-sm w-full py-2 '>Message</label>
