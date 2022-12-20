@@ -2,7 +2,7 @@ export const BriefIntro = [
   {
     name: "Alkiviades Savoullis",
     quote: "Let's Build the Future",
-    role: "Business Intelligence Developer | M.Eng.Electrical and Electronics Engineering | Entrepreneur | UK-Cyprus-Europe ",
+    role: "Business Intelligence Developer | Entrepreneur",
     overview: " ",
     // social: [
     gitHub: "https://github.com",

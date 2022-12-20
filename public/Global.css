@@ -2,51 +2,78 @@
 @tailwind utilities;
 @tailwind components;
 
-
-html{
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-/* body{
-    background-color: rgba(85, 78, 78, 0.658);
-} */
+@layer base {
+  body {
+    @apply bg-[#bccec9] text-[#242525] tracking-wide;
+  }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
 
-@layer base{
-    body{
-        @apply bg-[#bccec9] text-[#242525] tracking-wide
-    }
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
 
-    h1, h2, h3, h4, h5, h6{
-        @apply font-bold
-    }
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
 
-    h1{
-        @apply text-4xl sm:text-5xl md:text-6xl
-    }
+  h3 {
+    @apply text-gray-900;
+  }
 
-    h2{
-        @apply text-3xl sm:text-4xl
-    }
-
-    /* nav{
+  /* nav{
         @apply z-[500]
     } */
 
-    li{
-        @apply cursor-pointer
-    }
+  li {
+    @apply cursor-pointer;
+  }
 
-    button{
-        @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5e51e5] to-[#635bbd] text-white 
-    }
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5e51e5] to-[#635bbd] text-white;
+  }
 }
 
+.h2header {
+  background: radial-gradient(red, blue, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: back 1s infinite ease-in-out;
+}
 
-/* nav{
+@keyframes back {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+ nav{
     z-index: 99999;
-} */
+}
 
 .popup{
     animation: popUp .8s forwards ease-in-out;
@@ -94,4 +121,3 @@ html{
         height: 0%;
     }
 } */
-

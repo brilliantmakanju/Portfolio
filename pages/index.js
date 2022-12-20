@@ -25,7 +25,7 @@ export default function Home() {
         <Intro />
         <About />
         <Skills />
-        <Contact />
+        {/* <Contact /> */}
         <Topscroll />
       </main>
       {/* <Footer /> */}

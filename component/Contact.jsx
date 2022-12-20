@@ -5,7 +5,7 @@ import { BsPersonFill } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai'
 const Link = dynamic(() => import("next/link"))
 const Image = dynamic(() => import("next/image"))
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
+import { FaLinkedinIn, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi'
 import Popup from './Popup'
 
@@ -110,17 +110,17 @@ const Contact = () => {
                             <div>
                                 <p className='uppercase' >Connect with me</p>
                                 <div className='flex items-center justify-between py-4 ' >
-                                    <div className='rounded-full shadow-lg shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                    <div className='rounded-full shadow-lg text-blue-800 shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
                                         <FaLinkedinIn />
                                     </div>
                                     <div className='rounded-full shadow-lg shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
                                         <FaGithub />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <AiOutlineMail />
+                                    <div className='rounded-full shadow-lg text-blue-500 shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                        <FaTwitter />
                                     </div>
-                                    <div className='rounded-full shadow-lg shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <BsPersonFill />
+                                    <div className='rounded-full shadow-lg text-[red] shadow-gray-700 p-5 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                        <FaYoutube />
                                     </div>
                                 </div>
                             </div>

@@ -6,21 +6,21 @@ const Image = dynamic(() => import("next/image"))
 
 const About = () => {
     return (
-        <div className='w-screen md:h-screen p-2 flex items-center pt-20 mb-[20em] ' id='about'>
-            <div className='max-w-[1240px] md:ml-10 ml-2 m-auto md:grid md:grid-cols-3 gaps-8 '>
+        <div className='w-screen bg-gray-700 mx-auto h-screen p-2 flex items-center pt-20  pb-32 ' id='about'>
+            <div className='max-w-[1240px]  mx-auto md:grid md:grid-cols-3 gaps-8 xl:gap-[100px] '>
                 <div className='col-span-2'>
                     <p className='uppercase text-xl tracking-widest text-[#5e51e5] '>About</p>
-                    <h2>Who I Am</h2>
+                    <h2 className='text-gray-900' >Who I Am</h2>
                     {
                         AboutMe.map((value, id) => (
                             <>
-                                <p key={id} className='py-2 text-gray-600'>{value.overview}</p>
+                                <p key={id} className='py-2 text-gray-200'>{value.overview}</p>
 
                             </>
                         ))
                     }
                     <Link href="#projects" >
-                        <p className='py-2 text-gray-600 underline cursor-pointer ' >Check out some of my latest projects.</p>
+                        <p className='py-2 text-gray-300 underline cursor-pointer ' >Check out some of my latest projects.</p>
                     </Link>
                 </div>
                 <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center  p-4 hover:scale-[1.03] ease-in duration-300 '>
