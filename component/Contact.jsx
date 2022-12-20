@@ -87,7 +87,7 @@ const Contact = () => {
                 <p className='p-10 text-center font-bold text-[red] ' > Sorry an Error Occured. can you send the message again, Thank you. </p>
             </div>
 
-            <div className='max-w-[1240px] m-auto px-1 py-20 w-full ' >
+            <div className='max-w-[1240px] m-auto px-4 py-20 w-full ' >
                 <p className='text-xl tracking-widest uppercase text-[#5e51e5] ' >Contact</p>
                 <h2 className='py-4' >Get in touch</h2>
                 <div className='grid justify-center mx-auto items-center h-auto lg:grid-cols-5 gap-8 ' >
@@ -102,8 +102,7 @@ const Contact = () => {
                                 />
                             </div>
                             <div className='px-4 py-4 ' >
-                                <h2 className='py-2' >Alkis Savoullis</h2>
-                                <p>Front-End Engineer</p>
+                                <h2 className=' w-full py-2' >Alkiviades Savoullis | <br /> Business Intelligence Developer </h2>
                                 <p className='py-4' >I am available for freelance and full-time position. Contact me and let's talk.</p>
                             </div>
                             <div className='px-4' >
@@ -118,7 +117,7 @@ const Contact = () => {
                                     <div className='rounded-full shadow-lg  text-blue-500 shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
                                         <FaTwitter size={50} />
                                     </div>
-                                    <div className='rounded-full shadow-lg  text-[red] shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
+                                    <div className=' shadow-lg bg-gray-200 h-[50px] rounded-lg text-[red] shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
                                         <FaYoutube size={50} />
                                     </div>
                                 </div>
