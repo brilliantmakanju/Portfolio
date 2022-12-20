@@ -10,7 +10,7 @@ const Image = dynamic(() => import("next/image"))
 
 const Intro = () => {
     return (
-        <div className='w-screen h-screen mx-auto bg-gray-900 text-center md:mb-0 ' id='intro'>
+        <div className='w-screen h-auto mx-auto bg-gray-900 text-center md:mb-0 ' id='intro'>
             <div className='max-w-[1240px] w-full h-screen mx-auto p-2 flex flex-col justify-center items-center '>
 
                 <div className='sm:mt-[0] mt-[100px]'>
