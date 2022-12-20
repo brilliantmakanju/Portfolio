@@ -5,7 +5,7 @@ const Image = dynamic(() => import("next/image"))
 
 const Skills = () => {
     return (
-        <div className='w-screen bg-gray-900 h-auto mx-auto  md:pt-[15em] lg:pt-[15em] xl:pt-[19em] md:px-6 px-7 lg:px-6 ' id='skill'>
+        <div className='w-screen mb-0 bg-gray-900 pb-32 h-auto mx-auto  md:pt-[15em] lg:pt-[15em] xl:pt-[19em] md:px-6 px-7 lg:px-6 ' id='skill'>
             <div className='max-w-[1240px] mx-auto justify-center h-auto pt-32 ' >
                 <p className='text-xl tracking-widest uppercase text-[#5e51e5] ' >Skills</p>
                 <h3 className='my-5 text-gray-400 text-2xl ' >Technical Skills</h3>
@@ -41,7 +41,7 @@ const Skills = () => {
                                                 <h3 className='capitalize' >{value.skillName}</h3>
                                             </div>
                                             <div className='w-full bg-gray-500  rounded-full h-1.5  '>
-                                                <div className='bg-blue-400 text-xs font-medium text-blue-700 p-0.5 leading-none h-1.5 rounded-full  ' style={{ width: "50%" }} ></div>
+                                                <div className='bg-blue-400 text-xs font-medium text-blue-700 p-0.5 leading-none h-1.5 rounded-full  ' style={{ width: "90%" }} ></div>
                                             </div>
                                         </div>
                                     </div>

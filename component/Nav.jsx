@@ -103,8 +103,8 @@ const Nav = () => {
             </div>
 
             <div className={` ${mobile ? ' md:hidden fixed left-0 top-0 w-full h-screen bg-[#141313b2] ' : '  '}  `}>
-                <div className={mobile ? 'fixed  left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#bccec9] p-10 ease-in duration-500  ' : ' fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#bccec9] p-10 ease-in duration-300  '}>
-                    <div className='ml-[-20px]' >
+                <div className={mobile ? 'fixed  left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-900 p-10 ease-in duration-500  ' : ' fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-900 p-10 ease-in duration-300 text-gray-200 '}>
+                    <div className='ml-[-20px] text-gray-200  ' >
                         <div className='flex w-full justify-end'>
                             <div onClick={() => handleMobile()} className='rounded-full shadow-lg shadow-gray-400 cursor-pointer p-3 '>
                                 <AiOutlineClose />

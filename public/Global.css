@@ -46,6 +46,10 @@ html {
   }
 }
 
+input{
+  outline: none;
+}
+
 .h2header {
   background: radial-gradient(red, blue, orange);
   -webkit-background-clip: text;

@@ -71,7 +71,7 @@ const Contact = () => {
     }, [])
 
     return (
-        <div className='w-screen mt-[5em] md:mt-[25em] ' id='contact' >
+        <div className='w-screen md:mt-[-10%] text-gray-200  mt-[-22%] h-auto bg-gray-700  ' id='contact' >
 
             <div className={`  ${popup ? ' fixed left-0 top-0 w-full h-screen bg-[#0c0b0bbb] ' : '  '}  `}></div>
             <div className={`${popup ? "popup" : "popout hidden"} fixed  md:left-[71vh] left-[5vh] top-[50vh] right-auto bg-[#bccec9] w-[80%] md:w-[30%] mx-auto my-auto translate-x-[50%] translate-y-[-50%] shadow-xl shadow-gray-700 rounded-lg`} >
@@ -87,7 +87,7 @@ const Contact = () => {
                 <p className='p-10 text-center font-bold text-[red] ' > Sorry an Error Occured. can you send the message again, Thank you. </p>
             </div>
 
-            <div className='max-w-[1240px] m-auto px-2 py-16 w-full ' >
+            <div className='max-w-[1240px] m-auto px-1 py-20 w-full ' >
                 <p className='text-xl tracking-widest uppercase text-[#5e51e5] ' >Contact</p>
                 <h2 className='py-4' >Get in touch</h2>
                 <div className='grid justify-center mx-auto items-center h-auto lg:grid-cols-5 gap-8 ' >
@@ -132,20 +132,20 @@ const Contact = () => {
                                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                     <div className='flex flex-col'>
                                         <label className='uppercase text-sm py-2 '>Name</label>
-                                        <input type="text" onChange={handleName} value={froms} name="user_name" className='border-2 rounded-xl p-3 flex border-gray-300  ' required />
+                                        <input type="text" onChange={handleName} value={froms} name="user_name" className='border-2 rounded-xl p-3 flex border-gray-300 text-black ' required />
                                     </div>
                                     <div className='flex flex-col'>
                                         <label className='uppercase text-sm w-full py-2 '>Email</label>
-                                        <input type="email" onChange={handleEmail} name="email" className='border-2 rounded-xl p-3 flex border-gray-300' required />
+                                        <input type="email" onChange={handleEmail} name="email" className='text-black border-2 rounded-xl p-3 flex border-gray-300' required />
                                     </div>
                                 </div>
                                 <div className='flex flex-col py-2'>
                                     <label className='uppercase text-sm w-full py-2 '>Subject</label>
-                                    <input type="text" className='border-2 rounded-xl p-3 flex border-gray-300' required />
+                                    <input type="text" className='border-2 rounded-xl p-3 text-black flex border-gray-300' required />
                                 </div>
                                 <div className='flex flex-col py-2'>
                                     <label className='uppercase text-sm w-full py-2 '>Message</label>
-                                    <textarea onChange={handleMessage} className='border-2 rounded-lg p-3 border-gray-400 ' name='message' rows='10' required />
+                                    <textarea onChange={handleMessage} className='border-2 text-black rounded-lg p-3 border-gray-400 ' name='message' rows='10' required />
                                 </div>
                                 <input type="submit" className=' w-full md:w-[25%] rounded-xl text-white bg-black text-center p-4 mt-4 ' value="Send" />
                             </form>

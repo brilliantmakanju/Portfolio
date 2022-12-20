@@ -5,7 +5,7 @@ import Topexp from '../component/Topexp'
 
 const Experience = () => {
     return (
-        <div id='joblevel'>
+        <div className='bg-gray-900 h-auto w-screen pt-[1em] pb-[2em] text-gray-100 ' id='joblevel'>
             <h2 className='text-center  mb-10 mt-[100px] '>Experience </h2>
             <div className='grid md:grid-cols-3 grid-cols-1 justify-center items-center md:px-20 mb-20 ml-[1%] gap-5 '>
                 {
