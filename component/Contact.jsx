@@ -91,22 +91,22 @@ const Contact = () => {
                 <p className='text-xl tracking-widest uppercase text-[#5e51e5] ' >Contact</p>
                 <h2 className='py-4' >Get in touch</h2>
                 <div className='grid justify-center mx-auto items-center h-auto lg:grid-cols-5 gap-8 ' >
-                    <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-500 rounded-xl p-4 ' >
-                        <div className='lg:p-4 h-full ' >
+                    <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl  shadow-gray-500 rounded-xl ' >
+                        <div className='h-full ' >
                             <div className='shadow-ss w-[100%] relative h-[50vh] '>
                                 <Image
                                     fill
                                     src='/assets/bus3.jpg'
-                                    className='rounded-xl absolute object-fill'
+                                    className='rounded-t-xl absolute object-fill'
                                     alt={'Alkis Savoullis'}
                                 />
                             </div>
-                            <div >
+                            <div className='px-4 py-4 ' >
                                 <h2 className='py-2' >Alkis Savoullis</h2>
                                 <p>Front-End Engineer</p>
                                 <p className='py-4' >I am available for freelance and full-time position. Contact me and let's talk.</p>
                             </div>
-                            <div>
+                            <div className='px-4' >
                                 <p className='uppercase' >Connect with me</p>
                                 <div className='flex items-center justify-between py-4 ' >
                                     <div className='rounded-full  shadow-lg text-blue-400 shadow-gray-700 cursor-pointer hover:scale-105 ease-in duration-300 '>
