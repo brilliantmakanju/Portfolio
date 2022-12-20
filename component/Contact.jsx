@@ -93,13 +93,12 @@ const Contact = () => {
                 <div className='grid justify-center mx-auto items-center h-auto lg:grid-cols-5 gap-8 ' >
                     <div className='col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-500 rounded-xl p-4 ' >
                         <div className='lg:p-4 h-full ' >
-                            <div className='shadow-ss '>
+                            <div className='shadow-ss w-[100%] relative h-[50vh] '>
                                 <Image
-                                    width={'350'}
-                                    height={'20'}
-                                    alt='Contact Image'
-                                    src='/projects/Alkis2.jpg'
-                                    className='w-full rounded-xl hover:scale-[1.03] ease-in duration-300 '
+                                    fill
+                                    src='/assets/bus3.jpg'
+                                    className='rounded-xl absolute object-fill'
+                                    alt={'Alkis Savoullis'}
                                 />
                             </div>
                             <div >
@@ -132,7 +131,7 @@ const Contact = () => {
                                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                                     <div className='flex flex-col'>
                                         <label className='uppercase text-sm py-2 '>Name</label>
-                                        <input type="text" onChange={handleName} value={froms} name="user_name" className='border-2 rounded-xl p-3 flex border-gray-300 md:focus:outline  text-black  '  required />
+                                        <input type="text" onChange={handleName} value={froms} name="user_name" className='border-2 rounded-xl p-3 flex border-gray-300 md:focus:outline  text-black  ' required />
                                     </div>
                                     <div className='flex flex-col'>
                                         <label className='uppercase text-sm w-full py-2 '>Email</label>

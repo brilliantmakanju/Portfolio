@@ -19,20 +19,19 @@ const About = () => {
                             </>
                         ))
                     }
-                    <Link href="#projects" >
-                        <p className='py-2 text-gray-300 underline cursor-pointer ' >Check out some of my latest projects.</p>
+                    <Link href="Experience" >
+                        <p className='py-2 text-gray-300 underline cursor-pointer ' >Check out some of my Job Experience.</p>
                     </Link>
                 </div>
-                <div className='w-full h-auto m-auto mt-5 shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center  p-4 hover:scale-[1.03] ease-in duration-300 '>
+                <div className='w-[90%] relative h-[50vh] m-auto mt-5 shadow-xl  shadow-gray-400 rounded-xl flex items-center justify-center  p-4 hover:scale-[1.03] ease-in duration-300 '>
                     {
                         AboutMe.map((value, id) => (
                             <>
                                 <Image
+                                    fill
                                     key={id}
-                                    height={10}
-                                    width={'400'}
-                                    src={value.myImg}
-                                    className='rounded-xl'
+                                    src='/assets/bus1.jpg'
+                                    className='rounded-xl absolute object-fill'
                                     alt={'Alkis Savoullis'}
                                 />
 

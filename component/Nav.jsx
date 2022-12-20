@@ -36,9 +36,9 @@ const Nav = () => {
     }, [])
 
     return (
-        <nav className={` ${router.pathname === '/Experience' ? 'fixed top-0  ' : ''}  ease-in duration-100 transition-colors ${fixed ? "fixed w-full h-20 shadow-md z-[100]  bg-gray-900 shadow-gray-900  border-b-2 border-[black]" : " fixed w-full h-20 z-[100] "} `}>
+        <nav className={`  ease-in duration-100 bg-gray-900 transition-colors ${fixed ? "fixed w-full h-20 shadow-md z-[100]  bg-gray-900 shadow-gray-900  border-b-2 border-[black]" : " fixed w-full h-20 z-[100] "} `}>
             <div className='flex text-white justify-between items-center w-full h-full pl-[15px] px-2 2xl:px-16 '>
-                <h2  >
+                <h2 className=' text-[30px] md:text-[30px] lg:text-[40px] xl:text-[50px] ' >
                     Alkis Savoullis
                 </h2>
                 <div>
