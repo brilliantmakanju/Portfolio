@@ -37,12 +37,12 @@ const Nav = () => {
 
     return (
         <nav className={`  ease-in duration-100 bg-gray-900 transition-colors ${fixed ? "fixed w-full h-20 shadow-md z-[100]  bg-gray-900 shadow-gray-900  border-b-2 border-[black]" : " fixed w-full h-20 z-[100] "} `}>
-            <div className='flex text-white justify-between items-center w-full h-full pl-[15px] px-2 2xl:px-16 '>
-                <h2 className=' text-[30px] md:text-[30px] lg:text-[40px] xl:text-[50px] ' >
-                    Alkis Savoullis
+            <div className='flex text-white justify-between items-center w-full h-full pl-[10px] px-2 2xl:px-16 '>
+                <h2 className=' text-[30px] md:text-[30px] lg:text-[33px] xl:text-[40px] ' >
+                    Alkiviades Savoullis
                 </h2>
                 <div>
-                    <ul className={` ${fixed ? " hidden md:flex text-white" : " hidden md:flex"}`}>
+                    <ul className={` ${fixed ? " hidden md:flex text-white" : " hidden md:flex"} md:hidden lg:flex`}>
                         <Link
                             href='/#intro'
                             prefetch={false}
@@ -97,7 +97,7 @@ const Nav = () => {
                     </ul>
                 </div>
 
-                <div className={`text-white  md:hidden`} onClick={() => handleMobile()}>
+                <div className={`text-white  lg:hidden`} onClick={() => handleMobile()}>
                     <AiOutlineMenu size={35} />
                 </div>
             </div>
@@ -112,7 +112,7 @@ const Nav = () => {
                         </div>
                         <div className='flex justify-between items-center w-full h-full mt-[20px] ' >
                             <h2>
-                                Alkis Savoullis
+                                Alkiviades Savoullis
                             </h2>
                         </div>
                         <div className='border-b border-gray-300 py-4'>
@@ -143,7 +143,7 @@ const Nav = () => {
                                     </li>
                                 </Link>
                                 <Link
-                                    href='/#skills'
+                                    href='/#skill'
                                     prefetch={false}
                                     onClick={(() => setMobile(false))}
                                 >

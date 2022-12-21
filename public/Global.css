@@ -7,9 +7,29 @@ html {
   scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar{
+  width: 10px;
+  background-color: rgb(17 24 39 / var(1));
+}
+
+html::-webkit-scrollbar-thumb{
+  background-color: #d1d5db !important;
+}
+
+html::-webkit-scrollbar-thumb-track{
+  background-color: rgb(17 24 39 / var(1)) !important;
+}
+
+
+
+
 @layer base {
+  html{
+    @apply scrollbar-thumb-gray-300;
+  }
+
   body {
-    @apply bg-gray-900 text-[#242525] tracking-wide;
+    @apply bg-gray-900 text-[#242525] tracking-wide ;
   }
 
   h1,
@@ -112,6 +132,41 @@ input{
     }
 }
 
+
+
+.text-sphere{
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  margin-top: 100px;
+  user-select: none;
+  position: relative;
+  align-items: center;
+  background-color: blue;
+  justify-content: center;
+}
+
+.tagcloud{
+  top: 0;
+  left: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: 0.00625em;
+  transition: .5s ease-in-out;
+}
+
+.tagcloud--item{
+  color: yellow;
+  text-transform: capitalize;
+}
+
+.tagcloud--item:hover{
+  color: darkblue;
+}
 
 
 
