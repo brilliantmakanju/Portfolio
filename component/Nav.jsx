@@ -36,7 +36,7 @@ const Nav = () => {
     }, [])
 
     return (
-        <nav className={`  ease-in duration-100 bg-gray-900 transition-colors ${fixed ? "fixed w-full h-20 shadow-md z-[100]  bg-gray-900 shadow-gray-900  border-b-2 border-[black]" : " fixed w-full h-20 z-[100] "} `}>
+        <nav className={` md:px-[30px]  ease-in duration-100 bg-gray-900 transition-colors ${fixed ? "fixed w-full h-20 shadow-md z-[100]  bg-gray-900 shadow-gray-900  border-b-2 border-[black]" : "  w-full h-20 z-[100] "} `}>
             <div className='flex text-white justify-between items-center w-full h-full pl-[10px] px-2 2xl:px-16 '>
                 <h2 className=' text-[30px] md:text-[30px] lg:text-[33px] xl:text-[40px] ' >
                     Alkiviades Savoullis
@@ -102,7 +102,7 @@ const Nav = () => {
                 </div>
             </div>
 
-            <div className={` ${mobile ? ' md:hidden fixed left-0 top-0 w-full h-screen bg-[#141313b2] ' : '  '}  `}>
+            <div className={` ${mobile ? 'z-[10] md:hidden fixed left-0 top-0 w-full h-screen bg-[#141313b2] ' : '  '}  `}>
                 <div className={mobile ? 'fixed  left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-900 p-10 ease-in duration-500  ' : ' fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-900 p-10 ease-in duration-300 text-gray-200 '}>
                     <div className='ml-[-20px] text-gray-200  ' >
                         <div className='flex w-full justify-end'>
@@ -110,7 +110,7 @@ const Nav = () => {
                                 <AiOutlineClose />
                             </div>
                         </div>
-                        <div className='flex justify-between items-center w-full h-full mt-[20px] ' >
+                        <div className='flex  items-center w-full h-full mt-[20px] ' >
                             <h2>
                                 Alkiviades Savoullis
                             </h2>

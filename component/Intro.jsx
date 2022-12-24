@@ -10,10 +10,10 @@ const Image = dynamic(() => import("next/image"))
 
 const Intro = () => {
     return (
-        <div className='w-screen h-auto mx-auto bg-gray-900 text-center md:mb-0 ' id='intro'>
-            <div className='max-w-[1240px] w-full h-screen mx-auto p-2 flex flex-col justify-center items-center '>
+        <div className='w-screen h-auto  mx-auto bg-gray-900 text-center md:mb-0 pb-[10] ' id='intro'>
+            <div className='max-w-[1240px] w-full h-screen mx-auto p-2 pb-[10] flex flex-col justify-center items-center '>
 
-                <div className='sm:mt-[0] mt-[100px]'>
+                <div className=''>
                     {
                         BriefIntro.map((Value) => (
                             <>
@@ -22,8 +22,7 @@ const Intro = () => {
                                 </div>
 
                                 {/* <p className='uppercase text-sm tracking-widest text-gray-500 ' >{Value.quote}</p> */}
-                                <h1 className='py-1  text-gray-700'><span className='text-[#5651e5] '>
-                                    {Value.name}</span></h1>
+                                <h1 className='py-1 w-screen text-gray-700 text-[#5651e5] px-[.4px]  '>{Value.name}</h1>
                                 <p className=' md:w-[70%] md:px-[auto] pl-[20px] mx-[auto] text-gray-200'>{Value.role}</p>
                                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4 mt-2 ' >
                                     <div className='rounded-full  shadow-lg text-blue-400  cursor-pointer hover:scale-105 ease-in duration-300 '>

@@ -29,7 +29,7 @@ html::-webkit-scrollbar-thumb-track{
   }
 
   body {
-    @apply bg-gray-900 text-[#242525] tracking-wide ;
+    @apply bg-gray-900 text-[#242525] tracking-wide 
   }
 
   h1,
