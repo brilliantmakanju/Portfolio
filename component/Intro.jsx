@@ -34,9 +34,6 @@ const Intro = () => {
                                     <div className='rounded-full shadow-lg  text-blue-500  cursor-pointer hover:scale-105 ease-in duration-300 '>
                                         <FaTwitter size={50} />
                                     </div>
-                                    <div className='rounded-full shadow-lg  text-[red] cursor-pointer hover:scale-105 ease-in duration-300 '>
-                                        <FaYoutube size={50} />
-                                    </div>
                                 </div>
 
                             </>
