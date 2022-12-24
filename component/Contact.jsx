@@ -103,7 +103,7 @@ const Contact = () => {
                             </div>
                             <div className='px-4 py-4 ' >
                                 <h2 className=' w-full py-2' >Alkiviades Savoullis <br /> <span className='text-[16px]' > Business Intelligence Developer</span> </h2>
-                                <p className='py-4' >I am available for freelance and full-time position. Contact me and let's talk.</p>
+                                <p className='py-4' >Feel free to contact me for any inquires via email.</p>
                             </div>
                             <div className='px-4' >
                                 <p className='uppercase' >Connect with me</p>
