@@ -14,15 +14,15 @@ const Skills = () => {
                         {
                             TSkill.map((value, id) => (
                                 <>
-                                    <div key={id} className='p-10 px-2 mb-5 md:w-[90%] border-[2px] bg-gray-400 border-gray-900 shadow-xl rounded-xl hover:scale-[1.03] ease-in duration-300  '>
+                                    <div key={id} className='p-10 px-2 mb-5 md:w-[90%] border-[2px] bg-gray-400 border-gray-900 shadow-xl rounded-xl md:hover:scale-[1.03] ease-in duration-300  '>
                                         <div className='flex flex-row  justify-between items-center mb-3 '>
                                             <div className='flex flex-col items-start justify-start    ' >
                                                 <h3 className='capitalize' >{value.skillName}</h3>
                                             </div>
-                                            <h4>86%</h4>
+                                            <h4>100%</h4>
                                         </div>
                                         <div className='w-full bg-gray-500 rounded-full h-1.5'>
-                                            <div className='bg-blue-400 text-xs font-medium text-blue-700 p-0.5 leading-none h-1.5 rounded-full  ' style={{ width: "86%" }} ></div>
+                                            <div className='bg-blue-400 text-xs font-medium text-blue-700 p-0.5 leading-none h-1.5 rounded-full  ' style={{ width: "100%" }} ></div>
                                         </div>
                                     </div>
                                 </>
@@ -36,15 +36,15 @@ const Skills = () => {
                         {
                             MySkill.map((value, id) => (
                                 <>
-                                    <div key={id} className='py-10 px-3 mb-5 md:w-[90%] border-[2px] bg-gray-400 border-gray-900 shadow-xl rounded-xl hover:scale-[1.03] ease-in duration-300 '>
-                                        <div className='grid grid-cols-2 gap-6 justify-between items-center '>
-                                            <div className='flex flex-col items-start justify-center w-[150%]' >
+                                    <div key={id} className='py-10 px-3 mb-5 md:w-[90%] border-[2px] bg-gray-400 border-gray-900 shadow-xl rounded-xl md:hover:scale-[1.03] ease-in duration-300 '>
+                                        <div className='flex flex-row  justify-between items-center mb-3 '>
+                                            <div className='flex flex-col items-start justify-start    ' >
                                                 <h3 className='capitalize' >{value.skillName}</h3>
                                             </div>
-                                            <h4>86%</h4>
+                                            <h4>100%</h4>
                                         </div>
                                         <div className='w-full bg-gray-500  rounded-full h-1.5  '>
-                                            <div className='bg-blue-400 text-xs font-medium text-blue-700 p-0.5 leading-none h-1.5 rounded-full  ' style={{ width: "90%" }} ></div>
+                                            <div className='bg-blue-400 text-xs font-medium text-blue-700 p-0.5 leading-none h-1.5 rounded-full  ' style={{ width: "100%" }} ></div>
                                         </div>
                                     </div>
                                 </>
