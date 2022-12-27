@@ -18,7 +18,7 @@ const Experience = () => {
                                         className='absolute object-fill rounded-full  '
                                     />
                                 </div>
-                                <div className='md:border-l-2 md:border-gray-300 w-full h-auto md:mt-8 pt-2 pl-5 ' >
+                                <div className='md:border-l-2 md:border-gray-300 w-full h-auto md:mt-8 pt-1 md:pt-2 md:pl-5 ' >
                                     <p>{value.year}</p>
                                     <h3 className='text-white' >{value.title}</h3>
                                     <p>{value.role}</p>
