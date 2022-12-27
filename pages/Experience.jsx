@@ -11,7 +11,7 @@ const Experience = () => {
                     JobLevel.map((value, index) => (
                         <>
                             <div className='md:flex md:flex-row grid grid-cols-1 gap-5 justify-start items-center  bg-no-repeat  bg-gray-900 text-gray-300 md:w-full  shadow-lg shadow-gray-900  py-10  rounded-xl duration-300 border border-1 border-[#13a094] ease-in-out relative text-left pl-[15px] overflow-hidden h-auto ' >
-                                <div className='md:relative absolute top-4 right-4 md:top-0 md:right-0 w-[15vh]  h-[15vh] overflow-hidden rounded-full md:mt-[-100px] ' key={index}  >
+                                <div className='md:relative absolute top-4 right-4 md:top-0 md:right-0 w-[10vh]  h-[10vh] overflow-hidden rounded-full md:mt-[-100px] ' key={index}  >
                                     <Image
                                         fill
                                         src="/projects/logo.jpeg"
