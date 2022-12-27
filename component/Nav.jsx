@@ -85,6 +85,17 @@ const Nav = () => {
                             </li>
                         </Link>
                         <Link
+                            href='/Project'
+                            prefetch={false}
+                            onClick={(() => setMobile(false))}
+                        >
+                            <li
+                                className='ml-10 text-small uppercase hover-border-b'
+                            >
+                                Projects
+                            </li>
+                        </Link>
+                        <Link
                             href='/#contact'
                             prefetch={false}
                         >
@@ -162,6 +173,17 @@ const Nav = () => {
                                         className='p-4 text-small'
                                     >
                                         Experience
+                                    </li>
+                                </Link>
+                                <Link
+                                    href='/Project'
+                                    prefetch={false}
+                                    onClick={(() => setMobile(false))}
+                                >
+                                    <li
+                                        className='p-4 text-small'
+                                    >
+                                        Projects
                                     </li>
                                 </Link>
                                 <Link

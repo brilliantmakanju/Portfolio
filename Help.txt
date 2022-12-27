@@ -131,4 +131,35 @@ export default Skills
                         }
                     </div>
                 </div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                Add a footer
+
+                change the exp to projects
+
+                add a new exp like linkdin
                                 
