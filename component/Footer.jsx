@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import {FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
     return (
-        <footer className='text-center relative md:pt-10 pt-2 md:pb-20 pb-10 bg-black text-white w-[100vw]'  >
+        <footer className='text-center relative md:pt-10 pt-2 md:pb-20 pb-10 bg-gray-900 border-t-2 border-gray-400 text-white w-[100vw]'  >
             <div className='grid grid-cols-1 md:grid-cols-3 md:gap-5 mt-10 md:justify-start ' >
                 <div className=' text-gray-300 relative h-[100px] w-[100px] rounded-full flex md:justify-center md:items-center justify-center items-center m-auto md:ml-[10em]  ' >
                     <Image
@@ -15,12 +16,9 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col md:justify-center py-[2em] md:items-center justify-center items-center md:mr-[5em] ' >
                     <div className='flex md:gap-10 gap-7 justify-center items-center' >
-                        <h2>S</h2>
-                        <h2>T</h2>
-                        <h2>F</h2>
-                        <h2>E</h2>
-                        <h2>L</h2>
-                        <h2>G</h2>
+                        <FaGithub size={"50px"} />
+                        <FaInstagram size={"50px"} />
+                        <FaLinkedin size={"50px"} />
                     </div>
                     <ul className=' grid grid-cols-3 md:hidden mt-[2em] '>
                         <Link

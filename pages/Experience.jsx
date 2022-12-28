@@ -1,10 +1,16 @@
-import Image from 'next/image'
 import React from 'react'
+import Head from "next/head";
+import Image from 'next/image'
 import { JobLevel } from '../data'
 
 const Experience = () => {
     return (
         <main className='md:px-10 py-5 px-2 text-white  w-screen h-auto  ' >
+            <Head>
+                <title>Alkis Savoullis | Experience</title>
+                <meta name="description" content="Aliks savoullis Portfolio Website" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
             <h2 className='text-center  m-auto mb-5 '>Experience </h2>
             <section className='grid grid-cols-1 justify-center items-center mb-20  gap-5  ' >
                 {
