@@ -146,7 +146,7 @@ const Footer = () => {
                     </Link>
                 </ul>
             </div>
-            <div className=' text-gray-900 font-extrabold text-white w-full absolute bottom-0  ' >Copyright © Alkiviades Savoullis</div>
+            <div className=' font-extrabold text-white w-full absolute bottom-0  ' >Copyright © Alkiviades Savoullis</div>
         </footer>
     )
 }
