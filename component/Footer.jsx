@@ -5,7 +5,7 @@ import {FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Footer = () => {
     return (
-        <footer className='text-center relative md:pt-10 pt-2 md:pb-20 pb-10 bg-gray-900 border-t-2 border-gray-400 text-white w-[100vw]'  >
+        <footer className='text-center relative md:pt-10 pt-2 md:pb-20 pb-5 bg-gray-900 border-t-2 border-gray-400 text-white w-[100vw]'  >
             <div className='grid grid-cols-1 md:grid-cols-3 md:gap-5 mt-10 md:justify-start ' >
                 <div className=' text-gray-300 relative h-[100px] w-[100px] rounded-full flex md:justify-center md:items-center justify-center items-center m-auto md:ml-[10em]  ' >
                     <Image
@@ -146,7 +146,7 @@ const Footer = () => {
                     </Link>
                 </ul>
             </div>
-            <div className='bg-gray-400 text-gray-900 font-extrabold  w-full absolute bottom-0  ' >Copywrite Alkis Savoullis</div>
+            <div className=' text-gray-900 font-extrabold text-white w-full absolute bottom-0  ' >Copyright © Alkiviades Savoullis</div>
         </footer>
     )
 }
