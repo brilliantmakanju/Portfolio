@@ -31,6 +31,8 @@ export const AboutMe = [
   },
 ];
 
+// SKills
+
 // Technical Skills:
 
 // Python
@@ -155,8 +157,6 @@ export const TSkill = [
     percentage: 90,
   },
 ];
-
-// SKills
 
 // Soft Skills:
 
